@@ -47,11 +47,11 @@ def parse_args():
     parser.add_argument('-mu', "--mu", type=float, default=1.5, help="mu")
     parser.add_argument('-r', "--reward_type", type=str, default="abs", help="reward type")
     parser.add_argument('-mp', "--max_path_length", type=int, default=1, help="reward type")
-<<<<<<< HEAD
+# <<<<<<< HEAD
     parser.add_argument('-ms', "--max_steps", type=int, default=10000, help="reward type")
-=======
+# =======
     parser.add_argument('-ms', "--max_steps", type=int, default=20000, help="reward type")
->>>>>>> b5b4e95f91f592911679eca78671ebe723447db6
+# >>>>>>> b5b4e95f91f592911679eca78671ebe723447db6
     parser.add_argument('-me', "--memory", type=int, default=0, help="reward type")
     parser.add_argument('-n', "--n", type=int, default=10, help="name of the game")
     parser.add_argument('-bs', "--batch_size", type=int, default=64, help="name of the game")
@@ -161,7 +161,6 @@ def main(arglist):
         # noise = .1
         noise = 1.
         alpha = .5
-
 
         for agent in agents:
             try:
